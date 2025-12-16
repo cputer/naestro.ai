@@ -585,18 +585,18 @@ function Footer() {
             &copy; {new Date().getFullYear()} STARGA Inc. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a
-              href="#"
+            <Link
+              href="/privacy"
               className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
+            </Link>
+            <Link
+              href="/terms"
               className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
             >
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>
