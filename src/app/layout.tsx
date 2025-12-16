@@ -2,21 +2,23 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Naestro.ai | Intelligent Governance & Automation",
+  title: "Naestro | META Brain Pre-ASI Operating System",
   description:
-    "AI-driven platform for intelligent governance and automation. Optimize decision-making, business processes, and multi-wave PR systems powered by the MIND language.",
+    "Naestro is the world's first META brain operating system designed to orchestrate and control all existing and future AI technologies through MIND Language.",
   keywords: [
-    "AI governance",
-    "automation",
+    "META brain",
+    "pre-ASI",
+    "AI orchestration",
     "MIND language",
-    "decision-making",
-    "business automation",
+    "AI control",
+    "agent kernel",
+    "AI automation",
   ],
   authors: [{ name: "Naestro" }],
   openGraph: {
-    title: "Naestro.ai | Intelligent Governance & Automation",
+    title: "Naestro | META Brain Pre-ASI Operating System",
     description:
-      "AI-driven platform for intelligent governance and automation.",
+      "Control all AI technologies through a unified orchestration layer powered by MIND Language.",
     type: "website",
   },
 };

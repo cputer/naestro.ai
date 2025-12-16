@@ -28,10 +28,22 @@ function Header() {
             Features
           </a>
           <a
+            href="#architecture"
+            className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+          >
+            Architecture
+          </a>
+          <a
             href="#technology"
             className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
           >
-            Technology
+            MIND Language
+          </a>
+          <a
+            href="#docs"
+            className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+          >
+            Documentation
           </a>
           <a
             href="#contact"
@@ -44,7 +56,7 @@ function Header() {
           href="#contact"
           className="hidden sm:inline-flex h-10 px-5 items-center justify-center rounded-full bg-[#fafafa] text-[#0a0a0f] text-sm font-medium hover:bg-[#e4e4e7] transition-colors"
         >
-          Get Started
+          Request Demo
         </a>
         {/* Mobile menu button */}
         <button className="md:hidden p-2 text-[#71717a] hover:text-[#fafafa]">
@@ -79,6 +91,13 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] animate-pulse-subtle" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <div className="opacity-0 animate-fade-in-up">
+          <a
+            href="https://mindlang.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-blue-500/50 hover:text-[#fafafa] transition-all"
+          >
         {/* Large Logo */}
         <div className="opacity-0 animate-fade-in-up mb-8">
           <svg className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto" viewBox="0 0 300 276" fill="#ffffff">
@@ -94,19 +113,32 @@ function Hero() {
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8">
             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             Powered by MIND Language
-          </span>
+            <svg
+              className="w-4 h-4"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+              />
+            </svg>
+          </a>
         </div>
 
         <h1 className="opacity-0 animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
-          Intelligent Governance
+          META Brain
           <br />
-          <span className="gradient-text">Automated Excellence</span>
+          <span className="gradient-text">Pre-ASI Operating System</span>
         </h1>
 
-        <p className="opacity-0 animate-fade-in-up delay-200 max-w-2xl mx-auto text-lg sm:text-xl text-[#71717a] mb-10 leading-relaxed">
-          Transform your decision-making with AI-driven automation. Naestro
-          optimizes business processes and multi-wave PR systems with
-          unprecedented precision.
+        <p className="opacity-0 animate-fade-in-up delay-200 max-w-3xl mx-auto text-lg sm:text-xl text-[#71717a] mb-10 leading-relaxed">
+          Naestro is the world&apos;s first META brain operating system designed to
+          orchestrate and control all existing and future AI technologies. Seamlessly
+          integrate complex business logic through MIND Language&apos;s human-readable syntax.
         </p>
 
         <div className="opacity-0 animate-fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -117,20 +149,20 @@ function Hero() {
             Request a Demo
           </a>
           <a
-            href="#features"
+            href="#architecture"
             className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-full border border-[#27272a] text-[#fafafa] text-sm font-medium hover:bg-[#18181b] transition-colors"
           >
-            Explore Features
+            Explore Architecture
           </a>
         </div>
 
         {/* Stats */}
         <div className="opacity-0 animate-fade-in-up delay-400 mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
           {[
-            { value: "99.9%", label: "Uptime" },
-            { value: "50ms", label: "Avg Response" },
-            { value: "10x", label: "Faster Decisions" },
-            { value: "24/7", label: "AI Support" },
+            { value: "100%", label: "AI Control" },
+            { value: "∞", label: "Model Support" },
+            { value: "Real-time", label: "Orchestration" },
+            { value: "Universal", label: "Compatibility" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl sm:text-3xl font-bold text-[#fafafa]">
@@ -214,9 +246,9 @@ function Features() {
           />
         </svg>
       ),
-      title: "Intelligent Automation",
+      title: "Universal AI Control",
       description:
-        "Automate complex business processes with AI that learns and adapts to your organization's unique patterns and requirements.",
+        "Control every AI technology that exists or will ever exist. Naestro acts as the central orchestrator for all AI-driven models, devices, and services.",
     },
     {
       icon: (
@@ -234,9 +266,9 @@ function Features() {
           />
         </svg>
       ),
-      title: "Real-time Decisions",
+      title: "Real-time Orchestration",
       description:
-        "Make data-driven decisions in milliseconds with our advanced processing engine that analyzes patterns across your entire operation.",
+        "Seamlessly coordinate multiple AI agents, models, and services in real-time with our advanced Agent Kernel and routing engine.",
     },
     {
       icon: (
@@ -254,9 +286,9 @@ function Features() {
           />
         </svg>
       ),
-      title: "Secure Governance",
+      title: "Policy Engine",
       description:
-        "Enterprise-grade security with comprehensive audit trails, compliance monitoring, and role-based access control built-in.",
+        "Enterprise-grade governance with comprehensive policy enforcement, audit trails, and role-based access control for all AI operations.",
     },
     {
       icon: (
@@ -276,7 +308,7 @@ function Features() {
       ),
       title: "MIND Language",
       description:
-        "Our proprietary language enables intuitive rule definition and complex logic expression for sophisticated automation workflows.",
+        "Human-readable syntax for expressing complex AI orchestration logic. Bridge the gap between technical implementation and business requirements.",
     },
     {
       icon: (
@@ -290,13 +322,13 @@ function Features() {
             strokeLinecap="round"
             strokeLinejoin="round"
             strokeWidth={1.5}
-            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+            d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
           />
         </svg>
       ),
-      title: "Analytics Dashboard",
+      title: "Multi-wave Processing",
       description:
-        "Comprehensive insights into your automation performance with real-time metrics, trend analysis, and predictive forecasting.",
+        "Native support for processing multiple waves of data and AI models simultaneously with built-in optimization algorithms.",
     },
     {
       icon: (
@@ -314,9 +346,9 @@ function Features() {
           />
         </svg>
       ),
-      title: "API Integration",
+      title: "API & Integrations",
       description:
-        "Seamlessly connect with your existing tools through our robust API. Support for REST, GraphQL, and custom webhooks.",
+        "Powerful APIs for workflows, automation, and agent coordination. Connect with any AI service through our universal adapter layer.",
     },
   ];
 
@@ -325,11 +357,11 @@ function Features() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
-            Built for the Future
+            Control Every AI
           </h2>
           <p className="max-w-2xl mx-auto text-lg text-[#71717a]">
-            Powerful capabilities designed to transform how organizations
-            operate and make decisions.
+            Naestro&apos;s modular architecture enables seamless orchestration of all
+            AI technologies through a unified control layer.
           </p>
         </div>
 
@@ -343,6 +375,102 @@ function Features() {
               delay={`delay-${(index + 1) * 100}`}
             />
           ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+// Architecture Section
+function Architecture() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-up");
+          entry.target.classList.remove("opacity-0");
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const components = [
+    { name: "Naestro Core", desc: "Central orchestration engine" },
+    { name: "Agent Kernel", desc: "AI agent coordination layer" },
+    { name: "Planner", desc: "Strategic execution planning" },
+    { name: "Router", desc: "Intelligent request routing" },
+    { name: "Policy Engine", desc: "Governance & compliance" },
+    { name: "MIND Runtime", desc: "Language execution environment" },
+  ];
+
+  return (
+    <section id="architecture" className="py-24 lg:py-32 relative bg-[#0f0f14]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div ref={ref} className="opacity-0">
+          <div className="text-center mb-16">
+            <span className="text-blue-400 text-sm font-medium tracking-wide uppercase mb-4 block">
+              Architecture
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+              Naestro System Architecture
+            </h2>
+            <p className="max-w-2xl mx-auto text-lg text-[#71717a]">
+              A modular, scalable architecture designed for universal AI orchestration
+              and control.
+            </p>
+          </div>
+
+          {/* Architecture diagram */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+            {components.map((comp, index) => (
+              <div
+                key={comp.name}
+                className="p-6 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-blue-500/50 transition-all group"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-3 h-3 rounded-full bg-blue-500" />
+                  <h3 className="font-semibold text-[#fafafa] group-hover:text-blue-400 transition-colors">
+                    {comp.name}
+                  </h3>
+                </div>
+                <p className="text-sm text-[#71717a] ml-6">{comp.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Connection visualization */}
+          <div className="mt-12 p-8 rounded-2xl bg-[#18181b]/50 border border-[#27272a]">
+            <div className="text-center">
+              <p className="text-[#71717a] mb-4">
+                All components work in harmony through the Agent Kernel, enabling:
+              </p>
+              <div className="flex flex-wrap justify-center gap-4">
+                {[
+                  "Multi-agent coordination",
+                  "Dynamic routing",
+                  "Policy enforcement",
+                  "Real-time validation",
+                ].map((item) => (
+                  <span
+                    key={item}
+                    className="px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-sm border border-blue-500/20"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -372,7 +500,7 @@ function Technology() {
   }, []);
 
   return (
-    <section id="technology" className="py-24 lg:py-32 relative bg-[#0f0f14]">
+    <section id="technology" className="py-24 lg:py-32 relative">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div
           ref={ref}
@@ -387,10 +515,9 @@ function Technology() {
               The MIND Language
             </h2>
             <p className="text-lg text-[#71717a] mb-8 leading-relaxed">
-              Our proprietary programming language enables intuitive expression
-              of complex business logic. MIND bridges the gap between technical
-              implementation and business requirements, making automation
-              accessible to everyone.
+              MIND bridges the gap between technical implementation and business
+              requirements, making AI orchestration accessible to everyone. Express
+              complex automation logic with intuitive, human-readable syntax.
             </p>
             <ul className="space-y-4">
               {[
@@ -417,6 +544,27 @@ function Technology() {
                 </li>
               ))}
             </ul>
+            <a
+              href="https://mindlang.dev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 mt-8 text-blue-400 hover:text-blue-300 transition-colors font-medium"
+            >
+              Learn more at mindlang.dev
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
           </div>
 
           {/* Right content - Code preview */}
@@ -477,6 +625,106 @@ function Technology() {
   );
 }
 
+// Documentation Section
+function Documentation() {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("animate-fade-in-up");
+          entry.target.classList.remove("opacity-0");
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  const resources = [
+    {
+      title: "Getting Started",
+      description: "Quick start guide to deploying Naestro",
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        </svg>
+      ),
+    },
+    {
+      title: "API Reference",
+      description: "Complete API documentation for developers",
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+        </svg>
+      ),
+    },
+    {
+      title: "MIND Language Docs",
+      description: "Learn the MIND programming language",
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+    },
+    {
+      title: "GitHub Repository",
+      description: "Source code and contributions",
+      icon: (
+        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+        </svg>
+      ),
+    },
+  ];
+
+  return (
+    <section id="docs" className="py-24 lg:py-32 relative bg-[#0f0f14]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <div ref={ref} className="opacity-0">
+          <div className="text-center mb-16">
+            <span className="text-blue-400 text-sm font-medium tracking-wide uppercase mb-4 block">
+              Resources
+            </span>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
+              Documentation
+            </h2>
+            <p className="max-w-2xl mx-auto text-lg text-[#71717a]">
+              Everything you need to get started with Naestro and master AI orchestration.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {resources.map((resource) => (
+              <a
+                key={resource.title}
+                href="#"
+                className="p-6 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-blue-500/50 transition-all group"
+              >
+                <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:bg-blue-500/20 transition-colors">
+                  {resource.icon}
+                </div>
+                <h3 className="font-semibold text-[#fafafa] mb-2 group-hover:text-blue-400 transition-colors">
+                  {resource.title}
+                </h3>
+                <p className="text-sm text-[#71717a]">{resource.description}</p>
+              </a>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // Footer Component
 function Footer() {
   return (
@@ -498,8 +746,8 @@ function Footer() {
               </span>
             </Link>
             <p className="text-[#71717a] text-sm leading-relaxed mb-6">
-              AI-driven platform for intelligent governance and automation.
-              Transform your decision-making today.
+              META brain pre-ASI operating system. Control all AI technologies
+              through a unified orchestration layer.
             </p>
             <div className="flex gap-4">
               <a
@@ -536,18 +784,45 @@ function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-4">Product</h3>
             <ul className="space-y-3">
-              {["Features", "Pricing", "Documentation", "API Reference"].map(
-                (item) => (
-                  <li key={item}>
-                    <a
-                      href="#"
-                      className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
-                    >
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                { name: "Features", href: "#features" },
+                { name: "Architecture", href: "#architecture" },
+                { name: "Pricing", href: "#" },
+                { name: "Roadmap", href: "#" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Resources column */}
+          <div>
+            <h3 className="text-sm font-semibold mb-4">Resources</h3>
+            <ul className="space-y-3">
+              {[
+                { name: "Documentation", href: "#docs" },
+                { name: "API Reference", href: "#" },
+                { name: "MIND Language", href: "https://mindlang.dev" },
+                { name: "GitHub", href: "#" },
+              ].map((item) => (
+                <li key={item.name}>
+                  <a
+                    href={item.href}
+                    className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+                    target={item.href.startsWith("http") ? "_blank" : undefined}
+                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  >
+                    {item.name}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -555,23 +830,21 @@ function Footer() {
           <div>
             <h3 className="text-sm font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
-              {["About", "Blog", "Careers", "Press"].map((item) => (
-                <li key={item}>
+              {[
+                { name: "About Us", href: "#" },
+                { name: "Blog", href: "#" },
+                { name: "Careers", href: "#" },
+                { name: "Contact", href: "#contact" },
+              ].map((item) => (
+                <li key={item.name}>
                   <a
-                    href="#"
+                    href={item.href}
                     className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
                   >
-                    {item}
+                    {item.name}
                   </a>
                 </li>
               ))}
-            </ul>
-          </div>
-
-          {/* Contact column */}
-          <div>
-            <h3 className="text-sm font-semibold mb-4">Contact</h3>
-            <ul className="space-y-3">
               <li>
                 <a
                   href="mailto:info@star.ga"
@@ -586,7 +859,12 @@ function Footer() {
               className="inline-flex items-center gap-2 mt-6 text-sm text-blue-400 hover:text-blue-300 transition-colors"
             >
               Schedule a demo
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -631,7 +909,9 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <Architecture />
         <Technology />
+        <Documentation />
       </main>
       <Footer />
     </div>
