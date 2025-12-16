@@ -10,10 +10,10 @@ function Header() {
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-            <span className="text-white font-bold text-sm">N</span>
+            <span className="text-white font-bold text-xs">{"{/}"}</span>
           </div>
           <span className="text-lg font-semibold tracking-tight group-hover:text-blue-400 transition-colors">
-            Naestro
+            NAESTRO
           </span>
         </Link>
         <div className="hidden md:flex items-center gap-8">
@@ -472,10 +472,10 @@ function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">N</span>
+                <span className="text-white font-bold text-xs">{"{/}"}</span>
               </div>
               <span className="text-lg font-semibold tracking-tight">
-                Naestro
+                NAESTRO
               </span>
             </Link>
             <p className="text-[#71717a] text-sm leading-relaxed mb-6">
@@ -555,16 +555,11 @@ function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:hello@naestro.ai"
+                  href="mailto:info@star.ga"
                   className="text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
                 >
-                  hello@naestro.ai
+                  info@star.ga
                 </a>
-              </li>
-              <li>
-                <span className="text-sm text-[#71717a]">
-                  San Francisco, CA
-                </span>
               </li>
             </ul>
             <a
@@ -587,7 +582,7 @@ function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-[#27272a] flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-[#71717a]">
-            &copy; {new Date().getFullYear()} Naestro. All rights reserved.
+            &copy; {new Date().getFullYear()} STARGA Inc. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
