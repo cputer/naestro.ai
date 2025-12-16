@@ -194,7 +194,7 @@ function Hero() {
         </div>
 
         <h1 className="opacity-0 animate-fade-in-up delay-100 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-6">
-          META Brain
+          META BRAIN
           <br />
           <span className="gradient-text">Pre-ASI Operating System</span>
         </h1>
