@@ -157,7 +157,7 @@ function Hero() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Large Logo */}
         <div className="opacity-0 animate-fade-in-up mb-8">
-          <svg className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto" viewBox="0 0 300 276" fill="#ffffff">
+          <svg className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto" viewBox="0 0 300 276" fill="#ffffff" aria-label="Naestro logo">
             <g transform="translate(0,276) scale(0.1,-0.1)">
               <path d="M2242 2653 c-11 -10 -143 -238 -295 -508 -249 -446 -829 -1480 -981 -1750 -77 -137 -86 -158 -86 -198 1 -51 49 -97 102 -97 55 0 81 32 167 201 46 90 166 322 266 514 100 193 303 584 450 870 147 286 313 606 368 710 59 112 100 202 100 219 0 50 -52 72 -91 39z" />
               <path d="M634 2591 c-147 -24 -260 -120 -305 -260 -20 -60 -22 -92 -24 -356 -2 -169 -8 -304 -14 -324 -23 -75 -94 -141 -152 -141 -13 0 -34 -3 -46 -6 -23 -6 -23 -9 -23 -150 l0 -144 48 0 c72 0 130 -34 162 -95 24 -48 25 -57 31 -310 7 -277 14 -324 64 -410 45 -78 185 -185 242 -185 13 0 37 36 85 128 l67 127 -52 25 c-91 44 -93 49 -101 346 -9 310 -18 352 -96 437 -28 30 -69 64 -92 76 l-42 20 37 16 c78 32 138 108 172 215 14 45 18 107 22 335 4 218 8 285 19 302 27 42 71 56 192 61 l112 5 0 143 0 144 -53 0 c-30 0 -87 2 -128 4 -41 3 -97 1 -125 -3z" />
@@ -171,6 +171,7 @@ function Hero() {
             href="https://mindlang.dev"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Visit MIND Language website"
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-blue-500/50 hover:text-[#fafafa] transition-all"
           >
             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
@@ -180,6 +181,7 @@ function Hero() {
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
+              aria-hidden="true"
             >
               <path
                 strokeLinecap="round"
