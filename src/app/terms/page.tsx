@@ -29,7 +29,7 @@ export default function TermsOfService() {
             <main className="pt-32 pb-24 px-6 lg:px-8">
                 <div className="max-w-3xl mx-auto">
                     <h1 className="text-4xl font-bold mb-4">Terms of Service</h1>
-                    <p className="text-[#71717a] mb-12">Last updated: December 2024</p>
+                    <p className="text-[#71717a] mb-12">Last updated: December 2025</p>
 
                     <div className="prose prose-invert max-w-none space-y-8">
                         <section>
