@@ -1,10 +1,12 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 // Header Component
 function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0f]/80 backdrop-blur-md border-b border-[#27272a]/50">
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -59,22 +61,84 @@ function Header() {
           Request Demo
         </a>
         {/* Mobile menu button */}
-        <button className="md:hidden p-2 text-[#71717a] hover:text-[#fafafa]">
+        <button
+          className="md:hidden p-2 text-[#71717a] hover:text-[#fafafa]"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
           <svg
             className="w-6 h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
+            {mobileMenuOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16M4 18h16"
+              />
+            )}
           </svg>
         </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {mobileMenuOpen && (
+        <div className="md:hidden bg-[#0a0a0f]/95 backdrop-blur-md border-b border-[#27272a]">
+          <div className="px-6 py-4 space-y-4">
+            <a
+              href="#features"
+              className="block text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Features
+            </a>
+            <a
+              href="#architecture"
+              className="block text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Architecture
+            </a>
+            <a
+              href="#technology"
+              className="block text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              MIND Language
+            </a>
+            <a
+              href="#docs"
+              className="block text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Documentation
+            </a>
+            <a
+              href="#contact"
+              className="block text-sm text-[#71717a] hover:text-[#fafafa] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Contact
+            </a>
+            <a
+              href="#contact"
+              className="inline-flex h-10 px-5 items-center justify-center rounded-full bg-[#fafafa] text-[#0a0a0f] text-sm font-medium hover:bg-[#e4e4e7] transition-colors"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Request Demo
+            </a>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
