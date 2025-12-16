@@ -91,13 +91,6 @@ function Hero() {
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] animate-pulse-subtle" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
-        <div className="opacity-0 animate-fade-in-up">
-          <a
-            href="https://mindlang.dev"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-blue-500/50 hover:text-[#fafafa] transition-all"
-          >
         {/* Large Logo */}
         <div className="opacity-0 animate-fade-in-up mb-8">
           <svg className="w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80 mx-auto" viewBox="0 0 300 276" fill="#ffffff">
@@ -110,7 +103,12 @@ function Hero() {
         </div>
 
         <div className="opacity-0 animate-fade-in-up delay-100">
-          <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8">
+          <a
+            href="https://mindlang.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-blue-500/50 hover:text-[#fafafa] transition-all"
+          >
             <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
             Powered by MIND Language
             <svg
