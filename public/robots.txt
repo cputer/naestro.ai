@@ -1,0 +1,11 @@
+# Robots.txt for NAESTRO
+# https://naestro.ai
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://naestro.ai/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1

@@ -9,9 +9,6 @@
   --card-bg: #101618;
   --border: #2d3335;
   --border-hover: #404647;
-}
-
-@theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
