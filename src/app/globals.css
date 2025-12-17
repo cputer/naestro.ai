@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 :root {
-  --background: #0a0a0f;
-  --foreground: #fafafa;
-  --muted: #71717a;
-  --accent: #3b82f6;
-  --accent-hover: #2563eb;
-  --card-bg: #18181b;
-  --border: #27272a;
+  --background: #080f11;
+  --foreground: #b8bbbc;
+  --muted: #a1a4a5;
+  --accent: #48D597;
+  --accent-hover: #20a36c;
+  --card-bg: #101618;
+  --border: #2d3335;
+  --border-hover: #404647;
 }
 
 @theme inline {
@@ -38,6 +39,7 @@ body {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -48,6 +50,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -58,6 +61,7 @@ body {
     opacity: 0;
     transform: translateX(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateX(0);
@@ -65,9 +69,12 @@ body {
 }
 
 @keyframes pulse-subtle {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.7;
   }
@@ -90,12 +97,29 @@ body {
 }
 
 /* Staggered animation delays */
-.delay-100 { animation-delay: 100ms; }
-.delay-200 { animation-delay: 200ms; }
-.delay-300 { animation-delay: 300ms; }
-.delay-400 { animation-delay: 400ms; }
-.delay-500 { animation-delay: 500ms; }
-.delay-600 { animation-delay: 600ms; }
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
 
 /* Gradient text effect */
 .gradient-text {
@@ -107,11 +131,11 @@ body {
 
 /* Subtle glow effect */
 .glow {
-  box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
+  box-shadow: 0 0 40px rgba(72, 213, 151, 0.15);
 }
 
 .glow-hover:hover {
-  box-shadow: 0 0 60px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 0 60px rgba(72, 213, 151, 0.25);
   transition: box-shadow 0.3s ease;
 }
 
@@ -125,6 +149,6 @@ body {
 
 /* Selection color */
 ::selection {
-  background: rgba(59, 130, 246, 0.3);
-  color: #fafafa;
+  background: rgba(72, 213, 151, 0.3);
+  color: #b8bbbc;
 }

@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
                                 <path d="M2393 2401 c-35 -66 -63 -126 -63 -134 0 -9 9 -19 20 -22 11 -4 28 -18 38 -33 15 -23 18 -65 22 -347 5 -307 6 -322 28 -370 27 -59 61 -98 120 -135 l42 -28 -44 -26 c-24 -14 -56 -40 -70 -57 -71 -84 -85 -151 -95 -444 -9 -274 -12 -288 -81 -322 -37 -19 -60 -23 -142 -23 l-98 0 0 -146 0 -146 163 4 c152 3 166 5 220 30 115 54 180 128 219 251 17 52 22 103 28 312 5 144 13 267 20 290 16 53 76 112 120 119 19 3 52 8 73 11 l37 6 0 134 0 135 -28 0 c-16 0 -51 7 -79 15 -46 14 -62 26 -115 88 -1 1 -4 164 -7 362 -6 352 -7 361 -30 413 -14 31 -43 69 -70 93 -46 41 -129 89 -153 89 -7 0 -41 -54 -75 -119z" />
                             </g>
                         </svg>
-                        <span className="text-lg font-semibold tracking-tight group-hover:text-blue-400 transition-colors">
+                        <span className="text-lg font-semibold tracking-tight group-hover:text-green-500 transition-colors">
                             NAESTRO
                         </span>
                     </Link>
@@ -139,7 +139,7 @@ export default function PrivacyPolicy() {
                                 If you have any questions about this Privacy Policy, please contact us at:
                             </p>
                             <p className="text-[#a1a1aa] mt-4">
-                                <a href="mailto:info@star.ga" className="text-blue-400 hover:text-blue-300 transition-colors">
+                                <a href="mailto:info@star.ga" className="text-green-500 hover:text-green-400 transition-colors">
                                     info@star.ga
                                 </a>
                             </p>
@@ -157,7 +157,7 @@ export default function PrivacyPolicy() {
                     <div className="flex gap-6">
                         <Link
                             href="/privacy"
-                            className="text-sm text-[#fafafa] hover:text-blue-400 transition-colors"
+                            className="text-sm text-[#fafafa] hover:text-green-500 transition-colors"
                         >
                             Privacy Policy
                         </Link>

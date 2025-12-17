@@ -18,7 +18,7 @@ function Header() {
               <path d="M2393 2401 c-35 -66 -63 -126 -63 -134 0 -9 9 -19 20 -22 11 -4 28 -18 38 -33 15 -23 18 -65 22 -347 5 -307 6 -322 28 -370 27 -59 61 -98 120 -135 l42 -28 -44 -26 c-24 -14 -56 -40 -70 -57 -71 -84 -85 -151 -95 -444 -9 -274 -12 -288 -81 -322 -37 -19 -60 -23 -142 -23 l-98 0 0 -146 0 -146 163 4 c152 3 166 5 220 30 115 54 180 128 219 251 17 52 22 103 28 312 5 144 13 267 20 290 16 53 76 112 120 119 19 3 52 8 73 11 l37 6 0 134 0 135 -28 0 c-16 0 -51 7 -79 15 -46 14 -62 26 -115 88 -1 1 -4 164 -7 362 -6 352 -7 361 -30 413 -14 31 -43 69 -70 93 -46 41 -129 89 -153 89 -7 0 -41 -54 -75 -119z" />
             </g>
           </svg>
-          <span className="text-lg font-semibold tracking-tight group-hover:text-blue-400 transition-colors">
+          <span className="text-lg font-semibold tracking-tight group-hover:text-green-500 transition-colors">
             NAESTRO
           </span>
         </Link>
@@ -152,7 +152,7 @@ function Hero() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/50 to-[#0a0a0f]" />
       {/* Accent glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-blue-500/10 rounded-full blur-[120px] animate-pulse-subtle" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-600/10 rounded-full blur-[120px] animate-pulse-subtle" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Large Logo */}
@@ -172,9 +172,9 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit MIND Language website"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-blue-500/50 hover:text-[#fafafa] transition-all"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-green-600/50 hover:text-[#fafafa] transition-all"
           >
-            <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+            <span className="w-2 h-2 rounded-full bg-green-600 animate-pulse" />
             Powered by MIND Language
             <svg
               className="w-4 h-4"
@@ -208,7 +208,7 @@ function Hero() {
         <div className="opacity-0 animate-fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-full bg-blue-600 text-white text-sm font-medium hover:bg-blue-700 transition-all hover:scale-105 glow-hover"
+            className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800 transition-all hover:scale-105 glow-hover"
           >
             Request a Demo
           </a>
@@ -282,7 +282,7 @@ function FeatureCard({ icon, title, description, delay }: FeatureCardProps) {
       ref={ref}
       className={`opacity-0 ${delay} p-8 rounded-2xl bg-[#18181b]/50 border border-[#27272a] hover:border-[#3f3f46] transition-all duration-300 hover:-translate-y-1 glow-hover group`}
     >
-      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/20 to-blue-700/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-green-600/20 to-green-800/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
         {icon}
       </div>
       <h3 className="text-xl font-semibold mb-3">{title}</h3>
@@ -297,7 +297,7 @@ function Features() {
     {
       icon: (
         <svg
-          className="w-6 h-6 text-blue-400"
+          className="w-6 h-6 text-green-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -317,7 +317,7 @@ function Features() {
     {
       icon: (
         <svg
-          className="w-6 h-6 text-blue-400"
+          className="w-6 h-6 text-green-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -337,7 +337,7 @@ function Features() {
     {
       icon: (
         <svg
-          className="w-6 h-6 text-blue-400"
+          className="w-6 h-6 text-green-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -357,7 +357,7 @@ function Features() {
     {
       icon: (
         <svg
-          className="w-6 h-6 text-blue-400"
+          className="w-6 h-6 text-green-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -377,7 +377,7 @@ function Features() {
     {
       icon: (
         <svg
-          className="w-6 h-6 text-blue-400"
+          className="w-6 h-6 text-green-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -397,7 +397,7 @@ function Features() {
     {
       icon: (
         <svg
-          className="w-6 h-6 text-blue-400"
+          className="w-6 h-6 text-green-500"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -481,7 +481,7 @@ function Architecture() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div ref={ref} className="opacity-0">
           <div className="text-center mb-16">
-            <span className="text-blue-400 text-sm font-medium tracking-wide uppercase mb-4 block">
+            <span className="text-green-500 text-sm font-medium tracking-wide uppercase mb-4 block">
               Architecture
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
@@ -498,12 +498,12 @@ function Architecture() {
             {components.map((comp, index) => (
               <div
                 key={comp.name}
-                className="p-6 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-blue-500/50 transition-all group"
+                className="p-6 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-green-600/50 transition-all group"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-3 h-3 rounded-full bg-blue-500" />
-                  <h3 className="font-semibold text-[#fafafa] group-hover:text-blue-400 transition-colors">
+                  <div className="w-3 h-3 rounded-full bg-green-600" />
+                  <h3 className="font-semibold text-[#fafafa] group-hover:text-green-500 transition-colors">
                     {comp.name}
                   </h3>
                 </div>
@@ -527,7 +527,7 @@ function Architecture() {
                 ].map((item) => (
                   <span
                     key={item}
-                    className="px-4 py-2 rounded-full bg-blue-500/10 text-blue-400 text-sm border border-blue-500/20"
+                    className="px-4 py-2 rounded-full bg-green-600/10 text-green-500 text-sm border border-green-600/20"
                   >
                     {item}
                   </span>
@@ -572,7 +572,7 @@ function Technology() {
         >
           {/* Left content */}
           <div>
-            <span className="text-blue-400 text-sm font-medium tracking-wide uppercase mb-4 block">
+            <span className="text-green-500 text-sm font-medium tracking-wide uppercase mb-4 block">
               Technology
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
@@ -592,7 +592,7 @@ function Technology() {
               ].map((item) => (
                 <li key={item} className="flex items-center gap-3">
                   <svg
-                    className="w-5 h-5 text-blue-400 flex-shrink-0"
+                    className="w-5 h-5 text-green-500 flex-shrink-0"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -612,7 +612,7 @@ function Technology() {
               href="https://mindlang.dev"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 mt-8 text-blue-400 hover:text-blue-300 transition-colors font-medium"
+              className="inline-flex items-center gap-2 mt-8 text-green-500 hover:text-green-400 transition-colors font-medium"
             >
               Learn more at mindlang.dev
               <svg
@@ -647,7 +647,7 @@ function Technology() {
               <div className="p-6 font-mono text-sm overflow-x-auto">
                 <pre className="text-[#71717a]">
                   <code>
-                    <span className="text-blue-400">rule</span>{" "}
+                    <span className="text-green-500">rule</span>{" "}
                     <span className="text-[#fafafa]">ProcessApproval</span>
                     {" {\n"}
                     {"  "}
@@ -659,7 +659,7 @@ function Technology() {
                     </span>
                     {"\n"}
                     {"    "}
-                    <span className="text-blue-400">and</span>{" "}
+                    <span className="text-green-500">and</span>{" "}
                     <span className="text-[#a1a1aa]">
                       user.role == &quot;manager&quot;
                     </span>
@@ -681,7 +681,7 @@ function Technology() {
               </div>
             </div>
             {/* Decorative glow */}
-            <div className="absolute -inset-4 bg-blue-500/5 rounded-3xl blur-2xl -z-10" />
+            <div className="absolute -inset-4 bg-green-600/5 rounded-3xl blur-2xl -z-10" />
           </div>
         </div>
       </div>
@@ -755,7 +755,7 @@ function Documentation() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div ref={ref} className="opacity-0">
           <div className="text-center mb-16">
-            <span className="text-blue-400 text-sm font-medium tracking-wide uppercase mb-4 block">
+            <span className="text-green-500 text-sm font-medium tracking-wide uppercase mb-4 block">
               Resources
             </span>
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
@@ -771,12 +771,12 @@ function Documentation() {
               <a
                 key={resource.title}
                 href="#"
-                className="p-6 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-blue-500/50 transition-all group"
+                className="p-6 rounded-xl bg-[#18181b] border border-[#27272a] hover:border-green-600/50 transition-all group"
               >
-                <div className="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center mb-4 text-blue-400 group-hover:bg-blue-500/20 transition-colors">
+                <div className="w-12 h-12 rounded-xl bg-green-600/10 flex items-center justify-center mb-4 text-green-500 group-hover:bg-green-600/20 transition-colors">
                   {resource.icon}
                 </div>
-                <h3 className="font-semibold text-[#fafafa] mb-2 group-hover:text-blue-400 transition-colors">
+                <h3 className="font-semibold text-[#fafafa] mb-2 group-hover:text-green-500 transition-colors">
                   {resource.title}
                 </h3>
                 <p className="text-sm text-[#71717a]">{resource.description}</p>
@@ -920,7 +920,7 @@ function Footer() {
             </ul>
             <a
               href="#"
-              className="inline-flex items-center gap-2 mt-6 text-sm text-blue-400 hover:text-blue-300 transition-colors"
+              className="inline-flex items-center gap-2 mt-6 text-sm text-green-500 hover:text-green-400 transition-colors"
             >
               Schedule a demo
               <svg

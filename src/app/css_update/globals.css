@@ -1,0 +1,46 @@
+/* Naestro.ai - Oxide Computer Design System
+ * Global Styles for Next.js + Tailwind CSS
+ */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-content-primary antialiased;
+  }
+  
+  h1 { @apply text-5xl md:text-6xl font-semibold tracking-tighter text-neutral-900; }
+  h2 { @apply text-4xl font-semibold tracking-tight text-neutral-900; }
+  h3 { @apply text-3xl font-semibold text-neutral-900; }
+  h4 { @apply text-2xl font-semibold text-neutral-900; }
+  h5 { @apply text-xl font-semibold text-neutral-900; }
+  h6 { @apply text-base font-semibold uppercase tracking-wide text-neutral-900; }
+  
+  p { @apply text-content-secondary leading-relaxed; }
+  a { @apply text-accent hover:text-accent-hover transition-colors duration-200; }
+  code { @apply font-mono text-sm bg-surface-secondary px-2 py-1 rounded text-accent; }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 
+           text-sm font-semibold uppercase tracking-wide 
+           rounded transition-all duration-200 cursor-pointer;
+  }
+  .btn-primary {
+    @apply bg-accent text-neutral-0 hover:bg-accent-hover hover:-translate-y-0.5;
+  }
+  .btn-secondary {
+    @apply bg-transparent text-accent border border-accent hover:bg-accent-light;
+  }
+  .card {
+    @apply bg-surface-raised border border-stroke rounded-lg p-6
+           hover:border-stroke-hover hover:-translate-y-1 hover:shadow-lg transition-all;
+  }
+  .input {
+    @apply w-full px-4 py-3 bg-surface-secondary border border-stroke rounded
+           focus:outline-none focus:border-accent transition-all;
+  }
+}
