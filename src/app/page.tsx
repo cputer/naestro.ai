@@ -56,7 +56,7 @@ function Header() {
         </div>
         <a
           href="#contact"
-          className="hidden sm:inline-flex h-10 px-5 items-center justify-center rounded-full bg-[#fafafa] text-[#0a0a0f] text-sm font-medium hover:bg-[#e4e4e7] transition-colors"
+          className="hidden sm:inline-flex h-10 px-5 items-center justify-center rounded-md bg-[#fafafa] text-[#0a0a0f] text-sm font-medium hover:bg-[#e4e4e7] transition-colors"
         >
           Request Demo
         </a>
@@ -131,7 +131,7 @@ function Header() {
             </a>
             <a
               href="#contact"
-              className="inline-flex h-10 px-5 items-center justify-center rounded-full bg-[#fafafa] text-[#0a0a0f] text-sm font-medium hover:bg-[#e4e4e7] transition-colors"
+              className="inline-flex h-10 px-5 items-center justify-center rounded-md bg-[#fafafa] text-[#0a0a0f] text-sm font-medium hover:bg-[#e4e4e7] transition-colors"
               onClick={() => setMobileMenuOpen(false)}
             >
               Request Demo
@@ -152,7 +152,7 @@ function Hero() {
       {/* Gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#0a0a0f]/50 to-[#0a0a0f]" />
       {/* Accent glow */}
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-600/10 rounded-full blur-[120px] animate-pulse-subtle" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-green-600/10 rounded-md blur-[120px] animate-pulse-subtle" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 text-center">
         {/* Large Logo */}
@@ -172,9 +172,9 @@ function Hero() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Visit MIND Language website"
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-green-600/50 hover:text-[#fafafa] transition-all"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-md bg-[#18181b] border border-[#27272a] text-sm text-[#71717a] mb-8 hover:border-green-600/50 hover:text-[#fafafa] transition-all"
           >
-            <span className="w-2 h-2 rounded-full bg-green-600 animate-pulse" />
+            <span className="w-2 h-2 rounded-md bg-green-600 animate-pulse" />
             Powered by MIND Language
             <svg
               className="w-4 h-4"
@@ -208,13 +208,13 @@ function Hero() {
         <div className="opacity-0 animate-fade-in-up delay-300 flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
             href="#contact"
-            className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-full bg-green-700 text-white text-sm font-medium hover:bg-green-800 transition-all hover:scale-105 glow-hover"
+            className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-md bg-green-700 text-white text-sm font-medium hover:bg-green-800 transition-all hover:scale-105 glow-hover"
           >
             Request a Demo
           </a>
           <a
             href="#architecture"
-            className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-full border border-[#27272a] text-[#fafafa] text-sm font-medium hover:bg-[#18181b] transition-colors"
+            className="w-full sm:w-auto inline-flex h-12 px-8 items-center justify-center rounded-md border border-[#27272a] text-[#fafafa] text-sm font-medium hover:bg-[#18181b] transition-colors"
           >
             Explore Architecture
           </a>
@@ -240,8 +240,8 @@ function Hero() {
 
       {/* Scroll indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-in delay-600">
-        <div className="w-6 h-10 rounded-full border-2 border-[#27272a] flex items-start justify-center p-2">
-          <div className="w-1 h-2 rounded-full bg-[#71717a] animate-bounce" />
+        <div className="w-6 h-10 rounded-md border-2 border-[#27272a] flex items-start justify-center p-2">
+          <div className="w-1 h-2 rounded-md bg-[#71717a] animate-bounce" />
         </div>
       </div>
     </section>
@@ -502,7 +502,7 @@ function Architecture() {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-3 h-3 rounded-full bg-green-600" />
+                  <div className="w-3 h-3 rounded-md bg-green-600" />
                   <h3 className="font-semibold text-[#fafafa] group-hover:text-green-500 transition-colors">
                     {comp.name}
                   </h3>
@@ -527,7 +527,7 @@ function Architecture() {
                 ].map((item) => (
                   <span
                     key={item}
-                    className="px-4 py-2 rounded-full bg-green-600/10 text-green-500 text-sm border border-green-600/20"
+                    className="px-4 py-2 rounded-md bg-green-600/10 text-green-500 text-sm border border-green-600/20"
                   >
                     {item}
                   </span>
@@ -636,9 +636,9 @@ function Technology() {
             <div className="rounded-2xl bg-[#18181b] border border-[#27272a] overflow-hidden">
               {/* Code window header */}
               <div className="flex items-center gap-2 px-4 py-3 border-b border-[#27272a]">
-                <div className="w-3 h-3 rounded-full bg-[#ef4444]" />
-                <div className="w-3 h-3 rounded-full bg-[#eab308]" />
-                <div className="w-3 h-3 rounded-full bg-[#22c55e]" />
+                <div className="w-3 h-3 rounded-md bg-[#ef4444]" />
+                <div className="w-3 h-3 rounded-md bg-[#eab308]" />
+                <div className="w-3 h-3 rounded-md bg-[#22c55e]" />
                 <span className="ml-3 text-xs text-[#71717a] font-mono">
                   workflow.mind
                 </span>
@@ -816,7 +816,7 @@ function Footer() {
             <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#18181b] border border-[#27272a] flex items-center justify-center text-[#71717a] hover:text-[#fafafa] hover:border-[#3f3f46] transition-colors"
+                className="w-10 h-10 rounded-md bg-[#18181b] border border-[#27272a] flex items-center justify-center text-[#71717a] hover:text-[#fafafa] hover:border-[#3f3f46] transition-colors"
                 aria-label="Twitter"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -825,7 +825,7 @@ function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#18181b] border border-[#27272a] flex items-center justify-center text-[#71717a] hover:text-[#fafafa] hover:border-[#3f3f46] transition-colors"
+                className="w-10 h-10 rounded-md bg-[#18181b] border border-[#27272a] flex items-center justify-center text-[#71717a] hover:text-[#fafafa] hover:border-[#3f3f46] transition-colors"
                 aria-label="GitHub"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -834,7 +834,7 @@ function Footer() {
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-[#18181b] border border-[#27272a] flex items-center justify-center text-[#71717a] hover:text-[#fafafa] hover:border-[#3f3f46] transition-colors"
+                className="w-10 h-10 rounded-md bg-[#18181b] border border-[#27272a] flex items-center justify-center text-[#71717a] hover:text-[#fafafa] hover:border-[#3f3f46] transition-colors"
                 aria-label="LinkedIn"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
